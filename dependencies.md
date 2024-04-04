@@ -8,6 +8,8 @@ react-dom
 react-router-dom
 react-scripts
 web-vitals
+flowbite
+flowbite-react
 
 ### Ressources : 
 
