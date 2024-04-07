@@ -35,7 +35,6 @@ function App() {
           </Router>
           <ContactForm/>
           <SessionForm/>
-
         <Footer/>
     </div>
   );

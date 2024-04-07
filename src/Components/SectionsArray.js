@@ -1,5 +1,4 @@
 export const sections = [
-    { title: 'Home', url: '/' },
     { title: 'À propos', url: '/About' },
     { title: 'Activites', url: '/Activites' },
     { title: 'Promouvoir', url: '/Promouvoir' },
