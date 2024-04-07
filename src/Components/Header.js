@@ -13,16 +13,7 @@ import Forum from "../Pages/Forum";
 
 import { sections } from './SectionsArray';
 
-const router = createBrowserRouter([
-    { path: '/', element: <Home/> },
-    { path: '/About', element: <About/> },
-    { path: '/Activites', element: <Activites/> },
-    { path: '/Promouvoir', element: <Promouvoir/> },
-    { path: '/Apprendre', element: <Apprendre/> },
-    { path: '/Divers', element: <Divers/> },
-    { path: '/Adherer', element: <Adherer/> },
-    { path: '/Forum', element: <Forum/> },
-])
+
 
 export default function Header(){
     return (
@@ -35,27 +26,21 @@ export default function Header(){
                     <div className="flex h-full items-center justify-center">
                         <div className="px-6 text-center text-white md:px-12">
                             <h1 className="mb-6 text-5xl font-bold">APIRP</h1>
-                            <h3 className="mb-8 text-3xl font-bold">Rejoignez-nous</h3>
-                            <button
-                                type="button"
-                                className="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
-                                data-twe-ripple-init
-                                data-twe-ripple-color="light"
-                            >
-                                <Link to="/">Accueil</Link>
-                            </button>
-                            {sections.map((section) => (
-                                <Link
-                                    color="inherit"
-                                    noWrap
-                                    key={section.title}
-                                    variant="body2"
-                                    to={section.url}
-                                    sx={{ p: 1, flexShrink: 0 }}
-                                >
-                                    {section.title}
-                                </Link>
-                            ))}
+                            <h3 className="mb-8 text-3xl font-bold">Association des Professeurs d'Italien de la Région Parisienne</h3>
+                                    {sections.map((section) => (
+                                        <Link
+                                            color="inherit"
+                                            noWrap
+                                            className='mr-4 inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-s font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600'
+                                            key={section.title}
+                                            variant="body2"
+                                            to={section.url}
+                                            sx={{ p: 1, flexShrink: 0 }}
+                                            element={<section.url/>}
+                                        >
+                                            {section.title}
+                                        </Link>
+                                    ))}
                         </div>
                     </div>
                 </div>

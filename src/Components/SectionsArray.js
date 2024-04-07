@@ -1,6 +1,6 @@
 export const sections = [
     { title: 'Home', url: '/' },
-    { title: 'About', url: '/About' },
+    { title: 'À propos', url: '/About' },
     { title: 'Activites', url: '/Activites' },
     { title: 'Promouvoir', url: '/Promouvoir' },
     { title: 'Apprendre', url: '/Apprendre' },
