@@ -13,12 +13,12 @@ const SessionForm = () => {
 
     return (
         <>
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-screen bg-gray-200">
             <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <h2 className="text-2xl font-bold mb-4">Connexion au Back-office</h2>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="login">
-                        Login:
+                    <label className="text-left block text-gray-700 text-sm font-bold mb-2" htmlFor="login">
+                        Identifiant :
                     </label>
                     <input
                         id="login"
@@ -29,8 +29,8 @@ const SessionForm = () => {
                     />
                 </div>
                 <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-                        Password:
+                    <label className="text-left block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                        Mot de passe :
                     </label>
                     <input
                         id="password"
@@ -45,7 +45,7 @@ const SessionForm = () => {
                         type="submit"
                         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     >
-                        Submit
+                        Envoyer
                     </button>
                 </div>
             </form>
