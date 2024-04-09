@@ -1,5 +1,4 @@
 export const sections = [
-    { title: 'Home', url: '/' },
     { title: 'À propos', url: '/About' },
     { title: 'Activites', url: '/Activites' },
     { title: 'Promouvoir', url: '/Promouvoir' },
@@ -7,6 +6,5 @@ export const sections = [
     { title: 'Divers', url: '/Divers' },
     { title: 'Adherer', url: '/Adherer' },
     { title: 'Forum', url: '/Forum' },
+    { title: 'Enseigner', url: '/Enseigner' },
   ];
-
-  export const newArray = [1,2,3,4];

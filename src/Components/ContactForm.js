@@ -33,7 +33,7 @@ function ContactForm() {
         <h2 className="text-2xl font-bold mb-4">Contactez nous !</h2>
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                    Name:
+                    Nom:
                 </label>
                 <input
                     id="name"
@@ -57,7 +57,7 @@ function ContactForm() {
             </div>
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="question">
-                    Question:
+                    Question ou message:
                 </label>
                 <textarea
                     id="question"
@@ -68,7 +68,7 @@ function ContactForm() {
             </div>
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="file">
-                    Upload File:
+                    Envoyez un fichier (optionnel):
                 </label>
                 <input
                     id="file"

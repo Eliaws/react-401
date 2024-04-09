@@ -12,6 +12,7 @@ import Apprendre from "./Pages/Apprendre";
 import Divers from "./Pages/Divers";
 import Adherer from "./Pages/Adherer";
 import Forum from "./Pages/Forum";
+import Enseigner from "./Pages/Enseigner";
 
 import ContactForm from './Components/ContactForm';
 import SessionForm from './Components/SessionForm';
@@ -31,11 +32,12 @@ function App() {
                 <Route path="/Apprendre" element={<Apprendre/>} />
                 <Route path="/Divers" element={<Divers/>} />
                 <Route path="/Adherer" element={<Adherer/>} />
+                <Route path="/Forum" element={<Forum/>} />
+                <Route path="/Login" element={<SessionForm/>} />
+                <Route path="/Enseigner" element={<Enseigner/>} />
               </Routes>
           </Router>
-          <ContactForm/>
-          <SessionForm/>
-
+          {/* <ContactForm/>*/}
         <Footer/>
     </div>
   );
